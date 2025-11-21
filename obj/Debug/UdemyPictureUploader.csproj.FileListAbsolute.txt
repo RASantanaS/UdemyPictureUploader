@@ -1,0 +1,12 @@
+C:\Users\Aly\source\repos\UdemyPictureUploader\obj\Debug\UdemyPictureUploader.csproj.AssemblyReference.cache
+C:\Users\Aly\source\repos\UdemyPictureUploader\obj\Debug\UdemyPictureUploader.udemyPictureUploader.resources
+C:\Users\Aly\source\repos\UdemyPictureUploader\obj\Debug\UdemyPictureUploader.Properties.Resources.resources
+C:\Users\Aly\source\repos\UdemyPictureUploader\obj\Debug\UdemyPictureUploader.csproj.GenerateResource.cache
+C:\Users\Aly\source\repos\UdemyPictureUploader\obj\Debug\UdemyPictureUploader.csproj.CoreCompileInputs.cache
+C:\Users\Aly\source\repos\UdemyPictureUploader\obj\Debug\UdemyPictureUploader.exe
+C:\Users\Aly\source\repos\UdemyPictureUploader\obj\Debug\UdemyPictureUploader.pdb
+C:\Users\Aly\source\repos\UdemyPictureUploader\bin\Debug\UdemyPictureUploader.exe.config
+C:\Users\Aly\source\repos\UdemyPictureUploader\bin\Debug\UdemyPictureUploader.exe
+C:\Users\Aly\source\repos\UdemyPictureUploader\bin\Debug\UdemyPictureUploader.pdb
+C:\Users\Aly\source\repos\UdemyPictureUploader\bin\Debug\udmImgDataBase.mdf
+C:\Users\Aly\source\repos\UdemyPictureUploader\bin\Debug\udmImgDataBase_log.ldf
