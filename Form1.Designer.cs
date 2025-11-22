@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(udemyPictureUploader));
             System.Windows.Forms.Label iD_Label;
             System.Windows.Forms.Label nombre_Label;
             System.Windows.Forms.Label ruta_de_Imagen_Label;
             System.Windows.Forms.Label imagen_Label;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(udemyPictureUploader));
             this.udmImages = new UdemyPictureUploader.udmImages();
             this.udmImage_UploadsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.udmImage_UploadsTableAdapter = new UdemyPictureUploader.udmImagesTableAdapters.udmImage_UploadsTableAdapter();
             this.tableAdapterManager = new UdemyPictureUploader.udmImagesTableAdapters.TableAdapterManager();
             this.udmImage_UploadsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.udmImage_UploadsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.iD_Label1 = new System.Windows.Forms.Label();
             this.nombre_TextBox = new System.Windows.Forms.TextBox();
@@ -66,6 +66,42 @@
             this.udmImage_UploadsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagen_PictureBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // iD_Label
+            // 
+            iD_Label.AutoSize = true;
+            iD_Label.Location = new System.Drawing.Point(12, 35);
+            iD_Label.Name = "iD_Label";
+            iD_Label.Size = new System.Drawing.Size(21, 13);
+            iD_Label.TabIndex = 1;
+            iD_Label.Text = "ID:";
+            // 
+            // nombre_Label
+            // 
+            nombre_Label.AutoSize = true;
+            nombre_Label.Location = new System.Drawing.Point(12, 64);
+            nombre_Label.Name = "nombre_Label";
+            nombre_Label.Size = new System.Drawing.Size(47, 13);
+            nombre_Label.TabIndex = 3;
+            nombre_Label.Text = "Nombre:";
+            // 
+            // ruta_de_Imagen_Label
+            // 
+            ruta_de_Imagen_Label.AutoSize = true;
+            ruta_de_Imagen_Label.Location = new System.Drawing.Point(12, 84);
+            ruta_de_Imagen_Label.Name = "ruta_de_Imagen_Label";
+            ruta_de_Imagen_Label.Size = new System.Drawing.Size(86, 13);
+            ruta_de_Imagen_Label.TabIndex = 5;
+            ruta_de_Imagen_Label.Text = "Ruta de Imagen:";
+            // 
+            // imagen_Label
+            // 
+            imagen_Label.AutoSize = true;
+            imagen_Label.Location = new System.Drawing.Point(12, 110);
+            imagen_Label.Name = "imagen_Label";
+            imagen_Label.Size = new System.Drawing.Size(45, 13);
+            imagen_Label.TabIndex = 7;
+            imagen_Label.Text = "Imagen:";
             // 
             // udmImages
             // 
@@ -92,7 +128,7 @@
             this.udmImage_UploadsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.udmImage_UploadsBindingNavigator.BindingSource = this.udmImage_UploadsBindingSource;
             this.udmImage_UploadsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.udmImage_UploadsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.udmImage_UploadsBindingNavigator.DeleteItem = null;
             this.udmImage_UploadsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -116,6 +152,32 @@
             this.udmImage_UploadsBindingNavigator.Size = new System.Drawing.Size(544, 25);
             this.udmImage_UploadsBindingNavigator.TabIndex = 0;
             this.udmImage_UploadsBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -150,16 +212,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -182,26 +237,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // udmImage_UploadsBindingNavigatorSaveItem
             // 
@@ -212,15 +249,6 @@
             this.udmImage_UploadsBindingNavigatorSaveItem.Text = "Guardar datos";
             this.udmImage_UploadsBindingNavigatorSaveItem.Click += new System.EventHandler(this.udmImage_UploadsBindingNavigatorSaveItem_Click_4);
             // 
-            // iD_Label
-            // 
-            iD_Label.AutoSize = true;
-            iD_Label.Location = new System.Drawing.Point(12, 35);
-            iD_Label.Name = "iD_Label";
-            iD_Label.Size = new System.Drawing.Size(21, 13);
-            iD_Label.TabIndex = 1;
-            iD_Label.Text = "ID:";
-            // 
             // iD_Label1
             // 
             this.iD_Label1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.udmImage_UploadsBindingSource, "ID:", true));
@@ -230,15 +258,6 @@
             this.iD_Label1.TabIndex = 2;
             this.iD_Label1.Text = "                      ";
             // 
-            // nombre_Label
-            // 
-            nombre_Label.AutoSize = true;
-            nombre_Label.Location = new System.Drawing.Point(12, 64);
-            nombre_Label.Name = "nombre_Label";
-            nombre_Label.Size = new System.Drawing.Size(47, 13);
-            nombre_Label.TabIndex = 3;
-            nombre_Label.Text = "Nombre:";
-            // 
             // nombre_TextBox
             // 
             this.nombre_TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.udmImage_UploadsBindingSource, "Nombre:", true));
@@ -246,15 +265,6 @@
             this.nombre_TextBox.Name = "nombre_TextBox";
             this.nombre_TextBox.Size = new System.Drawing.Size(423, 20);
             this.nombre_TextBox.TabIndex = 4;
-            // 
-            // ruta_de_Imagen_Label
-            // 
-            ruta_de_Imagen_Label.AutoSize = true;
-            ruta_de_Imagen_Label.Location = new System.Drawing.Point(12, 84);
-            ruta_de_Imagen_Label.Name = "ruta_de_Imagen_Label";
-            ruta_de_Imagen_Label.Size = new System.Drawing.Size(86, 13);
-            ruta_de_Imagen_Label.TabIndex = 5;
-            ruta_de_Imagen_Label.Text = "Ruta de Imagen:";
             // 
             // ruta_de_Imagen_Label1
             // 
@@ -265,18 +275,8 @@
             this.ruta_de_Imagen_Label1.TabIndex = 6;
             this.ruta_de_Imagen_Label1.Text = "                      ";
             // 
-            // imagen_Label
-            // 
-            imagen_Label.AutoSize = true;
-            imagen_Label.Location = new System.Drawing.Point(12, 110);
-            imagen_Label.Name = "imagen_Label";
-            imagen_Label.Size = new System.Drawing.Size(45, 13);
-            imagen_Label.TabIndex = 7;
-            imagen_Label.Text = "Imagen:";
-            // 
             // imagen_PictureBox
             // 
-            this.imagen_PictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.udmImage_UploadsBindingSource, "Imagen:", true));
             this.imagen_PictureBox.Location = new System.Drawing.Point(104, 110);
             this.imagen_PictureBox.Name = "imagen_PictureBox";
             this.imagen_PictureBox.Size = new System.Drawing.Size(423, 328);
